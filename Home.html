@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Giving UnKnow Title -->
+		<title> Creating Braj Beauty Web Page </title> 
+		<meta name="description" content="Just craeting HTML pages" />
+		<meta name="keywords" content="HTML,CSS,JS" />
+		<meta name="author" content="Braj Beauty" />
+		<meta http-equiv="referesh" content="2" />
+		
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slider.css">
+	</head>
+	
+	<body>
+		<!-- <header class="shadow-sm bg-lwhite"> -->
+			<!-- <div class="container"> -->
+				<!-- <nav class="navbar navbar-expand-lg"> -->
+					<!-- <div class="container-fluid"> -->
+						<!-- <a class="navbar-brand" href="Home.html" id="logo" ><img src="images/logo.jpg" height="60" class="d-inline-block align-top"></a> -->
+						<!-- <button class="navbar-toggler" type="button" data-bs-togger="collapse" data-bs-togger="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="toggle navigation"</button> -->
+						
+						
+		  <section>
+			<a class="navbar-brand" href="Home.html" id="logo" ><img src="images/logo.jpg" height="60" class="d-inline-block align-top"></a>
+			<!-- <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label> -->
+			<!-- <input type="checkbox" id="toggle-1"> -->
+			<nav>
+			  <ul >
+				<li><a href="services.html"><i class="icon-home"></i>Services</a></li>
+				<li><a href="packages.html"><i class="icon-thumbs-up-alt"></i>Packages</a></li>
+				<li><a href="offers.html"><i class="icon-thumbs-up-alt"></i>Offers</a></li>
+				
+				<!-- <li><a href="blog.html"><i class="icon-picture"></i>Blog</a></li> -->
+				<!-- <li><a href="contact-us.html"><i class="icon-phone"></i>Contact</a></li> -->
+				<li><input type="text" placeholder="Search.."></li>
+			  </ul>
+			</nav>
+		  </section>
+		  
+		  <div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="faqs.html"><i class="icon-home"></i>FAQs</a>
+			  <a href="aboutUs.html"><i class="icon-home"></i>About Us</a>
+			  <a href="contactUs.html"><i class="icon-home"></i>Contact Us</a>
+			  <a href="myOrders.html"><i class="icon-home"></i>My Orders</a>
+			  <a href="account.html"><i class="icon-home"></i>Account</a>
+			  <a href="settings.html"><i class="icon-home"></i>Settings</a>
+			  <a href="privacyPolicy.html"><i class="icon-home"></i>Privacy Policy</a>
+			  <a href="logOut.html"><i class="icon-home"></i>LogOut</a>
+			  
+		</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		
+		<script>
+			function openNav() {
+			  document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+			  document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+		  
+		</header>
+		<div  class="slideshow-container">
+		  <img class="mySlides" src="images/slider1.jpg" style="width:100%">
+		  <img class="mySlides" src="images/slider2.jpg" style="width:100%">
+		  <img class="mySlides" src="images/slider3.jpg" style="width:100%">
+		  <img class="mySlides" src="images/slider4.jpg" style="width:100%">
+		  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+		
+		<script>
+		  var slideIndex = 1;
+		  showDivs(slideIndex);
+
+		  function plusDivs(n) {
+			showDivs(slideIndex += n);
+		  }
+
+		  function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+			  x[i].style.display = "none";  
+			}
+			x[slideIndex-1].style.display = "block";  
+		  }
+		</script>
+	
+	
+		<!-- <header> -->
+			<!-- <section> -->
+				<!-- <nav> -->
+					<!-- <ul> -->
+						<!-- <li> </li> -->
+						<!-- <li> </li> -->
+						<!-- <li> </li> -->
+						<!-- <li> </li> -->
+					<!-- </ul> -->
+				<!-- </nav> -->
+			<!-- </section> -->
+		<!-- </header> -->
+		
+		<!-- <!--<script> -->
+			<!-- var name= prompt("Enter your name"); -->
+			<!-- document.write("Hello "+name); -->
+		<!-- </script> -->
+		
+		<!-- <script>  -->
+			<!-- alter("Welcome to this site!!"); -->
+		<!-- </script> -->
+		
+		<div class="row">
+		  <div class="column" style="background-color:#fde428;">
+			<h2>About Us</h2>
+			<p style="text-align:center;">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		  </div>
+		  <div class="column" style="background-color:#fde428;">
+			<h2>Navigation</h2>
+			<p style="text-align:center;"><a href="services.html">Services</a></p>
+			<p style="text-align:center;"><a href="packages.html">Packages</a></p>
+			<p style="text-align:center;"><a href="offers.html">Offers</a></p>
+			<!-- <p style="text-align:center;"><a href="blog.html">Blog</a></p> -->
+			<!-- <p style="text-align:center;"><a href="contact-us.html">Contact Us</a></p> -->
+		  </div>
+		  <div class="column" style="background-color:#fde428;">
+			<h2>Resent Post</h2>
+			<p style="text-align:center;">Some text..</p>
+		  </div>
+		  <div class="column" style="background-color:#fde428;">
+			<h2>Contact Us</h2>
+			<p style="text-align:center;"><strong>Address : </strong> Kathmandu Nepal</p><br />
+			<p style="text-align:center;"><strong>Mobile : </strong> 9865049122</p><br />
+			<p style="text-align:center;"><strong>Email : </strong> bikramsharma802@gmail.com</p>
+		  </div>
+		</div>
+		<div class="row" style="background-color:#000000; height:75px;">
+			<p style="text-align:center; color:#ffffff; float: left;margin: 0px;padding: 30px 15px 15px 15px;"><strong>© 2019 Travel. All Rights Reserved | Design by Bikram Sharma</p><br />
+		</div>
+	</body>
+</html>

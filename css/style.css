@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+body{margin:0px; padding:0px; font-family: 'Open Sans', sans-serif;}
+section{width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;}
+h1{margin:0px auto; display:table; font-size:26px; padding:40px 0px; color:#002e5b; text-align:center;}
+h1 span{font-weight:500;}
+
+header{width:100%; display:table; background-color:#fde428; margin-bottom:0px;}
+#logo{float:left; font-size:24px; text-transform:uppercase; color:#002e5b; font-weight:600; padding:5px 5px;}
+nav{width:auto; float:right;}
+nav ul{display:table; float:right;}
+nav ul li{float:left;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color:#002e5b; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;}
+nav ul li a:hover{background-color:#002e5b; color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a:hover i{color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a i{padding-right:10px; color:#002e5b; transition: all 0.5s ease 0s;}
+
+.toggle-menu ul{display:table; width:25px;}
+.toggle-menu ul li{width:100%; height:3px; background-color:#002e5b; margin-bottom:4px;}
+.toggle-menu ul li:last-child{margin-bottom:0px;}
+
+input[type=checkbox], label{display:none;}
+
+.content{display:table; margin-bottom:60px; width:900px;}
+.content h2{font-size:18px; font-weight:500; color:#002e5b; border-bottom:1px solid #fde428; display:table; padding-bottom:10px; margin-bottom:10px;}
+.content p{font-size:14px; line-height:22px; color:#7c7c7c; text-align:justify;}
+
+footer{display:table; padding-bottom:30px; width:100%;}
+.social{margin:0px auto; display:table; display:table;}
+.social li{float:left; padding:0px 10px;}
+.social li a{color:#002e5b; transition: all 0.5s ease 0s;}
+.social li a:hover{color:#fde428; transition: all 0.5s ease 0s;}
+
+
+
+{
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box {
+  float: left;
+  width:390px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
